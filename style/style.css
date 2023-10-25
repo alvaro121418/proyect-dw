@@ -1,0 +1,48 @@
+body{
+    background-image: url(fondoprin.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    justify-items: center;
+}
+
+.contenedor-grid{
+    display: grid;
+    width: 20cm;
+    height: 80%;
+    margin: auto;
+    gap: 2cm;
+    /*border: 2px solid black;*/
+    justify-items: center;
+    
+}
+
+.datos{
+    border: 1px solid black;
+    grid-area: span;
+    background-color: wheat;
+    /*width: 350px;*/
+    border-radius: 16px;
+    background-image: url(abstracto-blanco-color-lienzo-fondos-pantalla-texturas-superficie_74190-6385.webp);
+}
+
+.mapa-grid{
+    /*border: 2px solid white;*/
+    grid-column: 2;
+    /*background-color: blanchedalmond;*/
+}
+
+.vistaimg{
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid #AAA;
+  }
+
+.btn-acept{
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+.btn-send{
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
