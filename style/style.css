@@ -24,12 +24,14 @@ body{
     border-radius: 16px;
     background-image: url(abstracto-blanco-color-lienzo-fondos-pantalla-texturas-superficie_74190-6385.webp);
 }
-
-.mapa-grid{
-    /*border: 2px solid white;*/
-    grid-column: 2;
-    /*background-color: blanchedalmond;*/
+form label{
+    margin-left: 20px;
 }
+/* .mapa-grid{ */
+    /*border: 2px solid white;*/
+    /* grid-column: 2; */
+    /*background-color: blanchedalmond;*/
+/* } */
 
 .vistaimg{
     width: 150px;
