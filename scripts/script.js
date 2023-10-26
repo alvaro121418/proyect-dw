@@ -78,9 +78,13 @@ buttonAcept.addEventListener('click', () => {
                     divAddImg.parentNode.removeChild(divAddImg)
                     divBtnDelete.parentNode.removeChild(divBtnDelete)
                     input.parentNode.removeChild(input)
-                    check.checked=false
-                    loadImage(reader.result)
-                    buttonAcept.disabled = false;
+                    
+                    if (check) {
+                        buttonAcept.disabled = false;
+                    }
+                    // loadImage(reader.result)
+                    // buttonAcept.disabled = false;
+                    // validacionForm()
 
                     // input.disabled=false;
                 })
