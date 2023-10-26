@@ -12,13 +12,15 @@
 </head>
 
 <body>
-  <h1 class="pb-5">
-    <center>Formulario + Mapa</center>
-  </h1><br><br>
-  <div class="container text-center">
+  <div class="container-fluid">
+    <h1 class="pb-5 mt-5">
+      <center>Formulario + Mapa</center>
+    </h1><br><br>
+  </div>
+  <div class="container-fluid cont text-center">
     <div class="row">
       <div class="col">
-        <div class="datos" style="width: 500px;">
+        <div class="datos container-fluid" >
           <u>
             <h3>
               <center> Contactanos</center>
@@ -26,29 +28,32 @@
           </u><br>
           <form enctype="multipart/form-data" id="form">
             <!--============Espacio donde se carga la imagen seleccionada ======================-->
-            <!-- <center><input type="button" value="Borrar foto" id="btn-delete-photo"></center> -->
-            <div id="div-add-img"></div><br>
-            <div id="div-add-btnDelete"></div>
-            <label class="nombre">Ingrese su nombre</label>
-            <input type="text" id="input-name" placeholder=" Ingrese su nombre"><br><br>
-            <label>Ingrese su Apellido</label>
-            <input type="text" placeholder="Ingrese su Apellido"><br><br>
-            <label>Ingrese su Telefono</label>
-            <input type="number" placeholder="Ingrese su Telefono"><br><br>
-            <label>Ingrese su Email</label>
-            <input type="email" placeholder="Ingrese su Email"><br><br>
-            <label>Agregar Imagen</label>
-            <input type="checkbox" name="foto" id="check" onclick="validar()"><br><br>
-            <!--===========Creamos el contenedor donde se agregara el input tipo file =========-->
-            <div id="div-img"></div>
-    
-            <input type="button" value="Aceptar" id="button-acept" class="btn btn-sm btn-primary btn-acept" disabled
-              style="color:black">
-            <br><input  type="submit" value="Enviar" id="button-send" class="btn btn-lg bg-primary btn-send" onclick="validacionForm()">
+
+            <div id="div-add-img" class="container-fluid"></div><br>
+            <div id="div-add-btnDelete" class="container-fluid"></div>
+            <div class="container-fluid">
+              <label class="nombre">Ingrese su nombre</label>
+              <input type="text" id="input-name" placeholder=" Ingrese su nombre"><br><br>
+              <label>Ingrese su Apellido</label>
+              <input type="text" placeholder="Ingrese su Apellido"><br><br>
+              <label>Ingrese su Telefono</label>
+              <input type="number" placeholder="Ingrese su Telefono"><br><br>
+              <label>Ingrese su Email</label>
+              <input type="email" id="input-email" placeholder="Ingrese su Email"><br><br>
+              <label>Agregar Imagen</label>
+              <input type="checkbox" name="foto" id="check" onclick="validar()"><br><br>
+              <!--===========Creamos el contenedor donde se agregara el input tipo file =========-->
+              <div id="div-img"></div>
+
+              <input type="button" value="Aceptar" id="button-acept" class="btn btn-sm btn-primary btn-acept" disabled
+                style="color:black">
+              <br><input type="submit" value="Enviar" id="button-send" class="btn btn-lg bg-primary btn-send"
+                onclick="validacionForm()">
+            </div>
           </form>
         </div>
       </div>
-      <div class="col">
+      <div class="col div-map">
         <div class="mapa-grid datos mb-5">
           <u>
             <h2>Encuentranos aqui!!</h2>
@@ -63,6 +68,7 @@
     </div>
   </div>
 </body>
+<!--================Footer - Boostrap=======================-->
 <footer>
   <div class="container-fluid footer-resp a mt-5">
     <div class="row p-3 bg-black text-white">
@@ -120,7 +126,7 @@
 
         <p>Links</p>
         <div>
-          <a href="contactos-etc.html" class="text-decoration-none">Inicio</a>
+          <a href="#" class="text-decoration-none">Inicio</a>
         </div>
         <div>
           <a href="contactos-etc.html" class="text-decoration-none">Contacto</a>
@@ -132,14 +138,13 @@
 
     </div>
   </div>
-  <script src="js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
-    <script src="scripts/script.js"></script>
+  <script src="scripts/script.js"></script>
 </footer>
 
 </html>

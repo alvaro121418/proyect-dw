@@ -11,27 +11,20 @@ body{
     height: 80%;
     margin: auto;
     gap: 2cm;
-    /*border: 2px solid black;*/
-    justify-items: center;
-    
+    justify-items: center;  
 }
 
 .datos{
     border: 1px solid black;
     grid-area: span;
     background-color: wheat;
-    /*width: 350px;*/
     border-radius: 16px;
     background-image: url(abstracto-blanco-color-lienzo-fondos-pantalla-texturas-superficie_74190-6385.webp);
 }
+
 form label{
     margin-left: 20px;
 }
-/* .mapa-grid{ */
-    /*border: 2px solid white;*/
-    /* grid-column: 2; */
-    /*background-color: blanchedalmond;*/
-/* } */
 
 .vistaimg{
     width: 150px;
@@ -43,8 +36,15 @@ form label{
     margin-bottom: 10px;
     margin-left: 25px;
 }
+
 .btn-send{
     margin-bottom: 10px;
     margin-left: 25px;
+}
+
+@media(max-width: 900px){
+    .datos{
+        margin-top: 25px;
+    }
 }
 
